@@ -1,0 +1,18 @@
+footer {
+  background-color: rgba(94, 23, 235, 0.9);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+}
