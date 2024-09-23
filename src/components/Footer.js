@@ -21,7 +21,7 @@ function Footer() {
             </h3>
           </Col>
           <Col md="4">
-            <h3>&copy; {year} | Todos los derechos reservados</h3>
+            <h3>&copy; {year} | All rights reserved</h3>
           </Col>
           <Col md="4">
             <ul>

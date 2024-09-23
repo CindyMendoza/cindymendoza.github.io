@@ -13,13 +13,13 @@ function NavBarF() {
         <Container>
           <Navbar.Brand href="#">
             <header>
-              <div>
+              <div className="rebote">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
               <h1>Cindy Mendoza</h1>
-              <h4>Web development</h4>
+              <h4>Software Solutions</h4>
             </header>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="idNav">

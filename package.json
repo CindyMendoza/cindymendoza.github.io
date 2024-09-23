@@ -1,5 +1,5 @@
 {
-  "name": "Cindy Mendoza | Briefcase",
+  "name": "portafolio-web",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,9 +17,11 @@
     "react-icons": "^4.7.1",
     "react-parallax-tilt": "^1.7.42",
     "react-pdf": "^5.7.1",
-    "react-router-dom": "^6.2.2",
+    "react-router-dom": "^6.21.3",
     "react-scripts": "5.0.0",
+    "react-slick": "^0.29.0",
     "sass": "^1.56.1",
+    "slick-carousel": "^1.8.1",
     "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
@@ -27,7 +29,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,5 +50,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

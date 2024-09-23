@@ -6,34 +6,24 @@ import Home from "./components/Home/Home";
 import Contact from "./components/Contact/Contact";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
+
 import "./style.scss";
 // import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+import Aboutme from "./components/Aboutme/index";
 function App() {
-  const [load, upadateLoad] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      upadateLoad(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Footer/>
-      </div>
-    </Router>
+      <Router>
+        
+        <div className="App">
+          <Navbar />
+          <Aboutme/>
+          <Footer />
+        </div>
+      </Router>
   );
 }
 
