@@ -3,8 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
-  AiFillInstagram,
-  AiFillHeart,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -17,11 +15,12 @@ function Footer() {
         <Row>
           <Col md="4">
             <h3>
-              Cindy Mendoza <AiFillHeart />
+              <h3>&lt;/Cindy Mendoza&gt;</h3>
             </h3>
           </Col>
           <Col md="4">
             <h3>&copy; {year} | All rights reserved</h3>
+            {/* <h3>&copy; {year}</h3> */}
           </Col>
           <Col md="4">
             <ul>

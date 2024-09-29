@@ -1,47 +1,40 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Navbar } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
+import Type from "./Type";
+import "./home.scss";
+import myImage from "../../assets/images/home-1.jpeg";
+import NavBarF from "../Navbar";
 function Home() {
   return (
-    <section>
-      <Container fluid className="home-section" id="home">
-        <Container className="home-content">
-          <Row style={{ alignItems: "end" }}>
-            <Col md={7} className="home-header">
-              <h1 className="heading">
-                Hi there!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
-              </h1>
-              <div></div>
-            </Col>
-            <Col md={5}></Col>
-          </Row>
+    <section id="home">
+      <div className="home-section">
+        <div className="home-navbar">
+          <Container>
+            <NavBarF />
+          </Container>
+        </div>
+      </div>
+      <Container className="home-presentation">
+        <Row>
+          <Col>
+            <h1>Hello, I'm Cindy Mendoza!</h1>
+            <small>
+              <Type></Type>
+            </small>
+            <p>
+              I’m a passionate about Software Engineer and solving complex
+              problems through code. With experience in creating innovative
+              solutions, front-end interfaces or back-end architecture, I love
+              turning ideas into functional and efficient products.
+            </p>
 
-          <Row style={{ marginTop: "30px", marginBottom: "60px" }}>
-            <Col md={7}>
-              <Card className="quote-card-view">
-                <Card.Body>
-                  <blockquote className="blockquote mb-0">
-                    <p style={{ textAlign: "justify" }}>
-                      I'm passionate about creating, developing, maintaining,
-                      and testing software.
-                    </p>
-                  </blockquote>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-          <Row style={{ paddingTop: "60px", paddingBottom: "60px" }}>
-            <Col>
-              <h1 className="project-heading">
-                Languages and technologies used
-              </h1>
-              <div className="languagesandtech"></div>
-            </Col>
-          </Row>
-        </Container>
+            <p>
+              Explore my projects to see what I’ve been working on, or reach out
+              if you want to collaborate!
+            </p>
+          </Col>
+        </Row>
       </Container>
     </section>
   );

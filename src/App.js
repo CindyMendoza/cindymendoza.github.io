@@ -16,14 +16,15 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Aboutme from "./components/Aboutme/index";
 function App() {
   return (
-      <Router>
-        
-        <div className="App">
-          <Navbar />
-          <Aboutme/>
-          <Footer />
-        </div>
-      </Router>
+    <Router>
+      <div className="App">
+        <Home />
+        <Aboutme />
+        <Projects />
+        <Contact />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
