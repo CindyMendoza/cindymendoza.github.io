@@ -1,22 +1,42 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
+@keyframes bounce {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 header {
-  span {
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    margin-right: 5px;
-    display: inline-block;
-    &:nth-of-type(1) {
-      background-color: #5e17eb;
-    }
-    &:nth-of-type(2) {
-      background-color: #8c52ff;
-    }
-    &:nth-of-type(3) {
-      background-color: #cb6ce6;
+  .rebote {
+   
+    span {
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      margin-right: 5px;
+      display: inline-block;
+
+      &:nth-of-type(1) {
+        background-color: #5e17eb;
+        animation: bounce 0.6s 0.1s linear infinite;
+      }
+      &:nth-of-type(2) {
+        background-color: #8c52ff;
+        animation: bounce 0.6s 0.2s linear infinite;
+      }
+      &:nth-of-type(3) {
+        background-color: #cb6ce6;
+        animation: bounce 0.6s 0.3s linear infinite;
+      }
     }
   }
+
   h1 {
     font-size: 22px;
     font-weight: 800;
